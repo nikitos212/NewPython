@@ -21,9 +21,10 @@ def com(event):
     new2top.geometry("350x250")
     new2top.geometry("+{}+{}".format(546, 312))
     new2top.resizable(False, False)
-    img111=ImageTk.PhotoImage(Image.open("C:/Users/Admin/Desktop/New Python/thanks.jpg"))
+    img111=ImageTk.PhotoImage(Image.open("thanks.jpg"))
     labyl=Label(new2top,image=img111)
-    lubk=Label(new2top,text="Спасибо, ещё один одинокий"+"\n"+" разработчик стал немного счастливее!",font=30)
+    str3="Спасибо, ещё один одинокий"+"\n"+" разработчик стал немного счастливее!"
+    lubk=Label(new2top,text=str3,font=30)
     lubk.pack()
     labyl.pack()
     new2top.mainloop()
@@ -43,7 +44,8 @@ def startofgame():
     topchik.geometry("350x90")
     topchik.geometry("+{}+{}".format(846, 312))
     topchik.resizable(False, False)
-    lub=Label(topchik,bg="gold",text="Рекомендуем, сначала прочитать правила"+"\n"+"(открытие - клик левой кнопкой мыши)."+"\n"+"Удачи!",font=40)
+    str1="Рекомендуем, сначала прочитать правила"+"\n"+"(открытие - клик левой кнопкой мыши)."+"\n"+"Удачи!"
+    lub=Label(topchik,bg="gold",text=str1,font=40)
     lub.pack()
     topchik.mainloop()
 def function(event):
@@ -52,7 +54,8 @@ def function(event):
     top1.geometry("450x150")
     top1.geometry("+{}+{}".format(370, 250))
     top1.resizable(False, False)
-    labelr=Label(top1,text="Правила."+"\n"+"Главная задача - попасть в двигающуюся панель 5 раз,"+"\n"+"кол-во попаданий отображается в блоке (score),"+"\n"+"но при этом учитывается количество выстрелов,"+"\n"+"для победы не более 7, оно отображается в блоке (shots)."+"\n"+"Слишком часто делать выстрелы не рукомендуется."+"\n"+"Игра идёт без времени :) .",font=16)
+    str2="Правила."+"\n"+"Главная задача - попасть в двигающуюся панель 5 раз,"+"\n"+"кол-во попаданий отображается в блоке (score),"+"\n"+"но при этом учитывается количество выстрелов,"+"\n"+"для победы не более 7, оно отображается в блоке (shots)."+"\n"+"Слишком часто делать выстрелы не рукомендуется."+"\n"+"Игра идёт без времени :) ."
+    labelr=Label(top1,text=str2,font=16)
     labelr.pack()
     top1.mainloop()
 ok=0
@@ -116,7 +119,6 @@ def move1():
         if score==5:
             img100=ImageTk.PhotoImage(Image.open("C:/Users/Admin/Desktop/New Python/win.png"))
             img101=ImageTk.PhotoImage(Image.open("C:/Users/Admin/Desktop/New Python/lose.png"))
-            time.sleep(0.05)
             top=Toplevel()
             top.resizable(False, False)
             top.geometry("+{}+{}".format(326, 312))

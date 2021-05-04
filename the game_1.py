@@ -117,8 +117,8 @@ def move1():
         t=1
         lab101["text"]=str(score)+"/5"
         if score==5:
-            img100=ImageTk.PhotoImage(Image.open("C:/Users/Admin/Desktop/New Python/win.png"))
-            img101=ImageTk.PhotoImage(Image.open("C:/Users/Admin/Desktop/New Python/lose.png"))
+            img100=ImageTk.PhotoImage(Image.open("win.png"))
+            img101=ImageTk.PhotoImage(Image.open("lose.png"))
             top=Toplevel()
             top.resizable(False, False)
             top.geometry("+{}+{}".format(326, 312))
